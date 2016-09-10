@@ -1,0 +1,189 @@
+/* Empty. Add your own CSS if you like */
+body{
+  background-color: #f5f5f5;
+}
+ion-content{
+  background-color: #f5f5f5;
+}
+ion-list .list{
+  background-color: #f5f5f5;
+}
+.for-more-btn{
+  border: none;
+  border-top: 1px solid #a8a8a8;
+  font-size: 20px;
+  font-weight: 500;
+background: none;
+}
+/*
+sidebar right
+*/
+.side-bar-search-bar .list{
+  position: relative;
+  padding: 0 5%;
+  background-color: #2e3136;
+}
+.side-bar-search{
+  margin: 0px 12px;
+  color: #a8a8a8;
+  line-height: 30px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  text-align: center;
+  width: 100%;
+  padding: 0 29%;
+}
+.right-sidebar-no-person{
+  height: auto;
+  width: 100%;
+  background:none;
+  border: none;
+  text-align: center;
+  color: #b5b5b5;
+}
+.right-sidebar-no-person{
+  margin: 20px auto;
+  font-size: 20px;
+}
+.right-sidebar-no-person i{
+  font-size: 90px;
+}
+.right-sidebar-no-person a{
+  color: #11c1f3;
+}
+/*
+sidebar left
+*/
+.sidebar-menu .list .item{
+  font-size: 18px;font-weight: 500;background: #2e3136;color: #FFFFFF;
+  border: none;
+}
+
+.menu-left .list .item .icon {
+  font-size: 25px;
+  color: #b4b4b4;
+}
+
+.sidebar-menu .list{
+  font-size: 18px;font-weight: 500;background: #2e3136;border-bottom: 2px solid #d1d1d1 ;color: #FFFFFF;
+}
+.sidebar-menu .list a i.icon{
+  font-size: 25px;
+}
+.sidebar-menu .list .item a{
+  background-color: #2e3136;
+  border: none;
+}
+.sidebar-rich{
+  text-align: left;
+  color: #fcff1f;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+/* Empty. Add your own CSS if you like */
+.bar.bar-stable {
+  border-color: #b2b2b2;
+  background-color: #f538bb;
+  background-image: linear-gradient(0deg,#b2b2b2,#b2b2b2 50%,transparent 50%);
+  color: #f1f1f1;
+}
+/*
+个人主页
+*/
+.home-btn-list{
+  background-color: #ffffff;
+  border-bottom: #747474;
+  margin-top: 10px;
+  color: #4d4d4d;
+  font-weight: 500;
+  padding: 0px;
+}
+.home-btn-list i{
+  font-size: 30px;
+}
+
+.home-btn-list-last-item{
+  background-color: #69BB05;
+  color: #FFFFFF;
+}
+.homepage-tabs-item{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Helvetica Neue",Roboto,"Segoe UI",sans-serif;
+  opacity: .7;
+  max-width: none;
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #747474;
+}
+.homepage-tabs-item.active{
+
+  border-bottom: 3px solid #0d6eff;
+}
+
+.homepage-tabs{
+  border-top: 1px solid #747474;
+  margin-top: 10px;
+}
+/*
+user list
+*/
+img.user-info{
+  max-width: 50px;max-height: 50px;top: 10px;left: 10px;
+}
+/**
+search
+**/
+.search-modal-no-result-panel .list{
+  background: none;
+}
+.search-modal-no-result{
+  height: auto;
+  width: 100%;
+  background:none;
+  border: none;
+  text-align: center;
+  color: #b5b5b5;
+}
+
+.search-modal-no-result{
+  margin: 20px auto;
+  font-size: 20px;
+}
+.search-modal-no-result i{
+  font-size: 90px;
+}
+.reg_form_input{
+  background: #FFFFFF;
+}
+.reg_form_input span{
+
+  margin-top: 5px;
+  height: 15px;
+}
+.photo-upload-panel{
+  width: 100%;
+
+  height: 414px;
+  padding: 25px;
+}
+.photo-upload-img{
+  width: 100%;
+  height: 364px;
+  border: 1px solid #bcbcbc;
+}

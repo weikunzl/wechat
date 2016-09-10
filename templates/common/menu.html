@@ -1,0 +1,136 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-chatboxes" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">Charmmeet</h1>
+    </ion-header-bar>
+    <ion-header-bar class="bar-subheader bar-dark" style="border: none;
+  border-bottom: 2px solid #d1d1d1 ;">
+
+      <h3 class="sidebar-rich">{{'GoldCoin'|translate}} ${{}}</h3>
+    </ion-header-bar>
+    <ion-content class="">
+      <ion-list class="sidebar-menu">
+        <ion-item class="item item-icon-left" menu-close ui-sref="app.main">
+          <i class="icon ion-home"></i>   <span ng-bind="'personalhomepages'|translate"></span>
+        </ion-item>
+      </ion-list>
+        <ion-list class="sidebar-menu">
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.upgrade" name="menu_Upgrade">
+            <i class="icon ion-ribbon-b"></i>   <span ng-bind="'upgrade'|translate"></span>
+          </ion-item>
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.GetGold">
+            <i class="icon ion-social-usd-outline"></i>   <span ng-bind="'GetGold'|translate"></span>
+            <!--<a href="#" class="show-submenu sidebar1-close" onclick="Goldpage()"><img src="image/menu/getgold.png" class="menu-img"><p id="menu_Gold">获取金币</p></a>-->
+
+          </ion-item>
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.ExpressionPostShop">
+
+            <i class="icon ion-happy-outline"></i>   <span ng-bind="'ExpressionPostShop'|translate"></span>
+            <!--<a href="#" class="show-submenu sidebar1-close" onclick="ExpressionShop()"><img src="image/menu/sticker shop.png" class="menu-img"><p id="menu_ExpressionShop">表情贴商店</p></a>-->
+
+          </ion-item>
+        </ion-list>
+
+        <ion-list class="sidebar-menu">
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.Onlineuserss">
+
+            <i class="icon ion-person-stalker"></i>   <span ng-bind="'Onlineuserss'|translate"></span>
+            <!--<a href="#" class="show-submenu sidebar1-close" oncion-itemck="Onion-itemneUsers()"><img src="image/menu/onion-itemnemember.png" class="menu-img"><p id="menu_Onion-itemneUsers">在线用户</p></a>-->
+          </ion-item>
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.freshNews">
+
+            <i class="icon ion-earth"></i>   <span ng-bind="'freshNews'|translate"></span>
+            <!--<a href="#" class="show-submenu sidebar1-close" oncion-itemck="freshNewsPage()"><img src="image/menu/newsfeed.png" class="menu-img"><p id="menu_freshNews">新鲜事</p></a>-->
+          </ion-item>
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.chatlang">
+            <i class="icon ion-chatbubbles"></i>   <span ng-bind="'chatlang'|translate"></span>
+            <!--<a href="#" class="show-submenu sidebar1-close open-return" oncion-itemck="Onion-itemneUsers()"><img src="image/menu/chat.png" class="menu-img"><p id="menu_chats">聊天</p><div id="interaction_chat" class="interaction_div" style="display: none;"></div></a>-->
+          </ion-item>
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.visiting">
+            <i class="icon ion-eye"></i>   <span ng-bind="'visiting'|translate"></span>
+            <!--<a href="#" class="show-submenu sidebar1-close" oncion-itemck="visitingPage()"><img src="image/menu/visiter.png" class="menu-img"><p id="menu_visiting">来访</p><div id="interaction_visit" class="interaction_div"></div></a>-->
+          </ion-item>
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.collections">
+            <i class="icon ion-ios-star-outline"></i>   <span ng-bind="'collections'|translate"></span>
+            <!--<a href="#" class="show-submenu sidebar1-close" oncion-itemck="collectionPage()"><img src="image/menu/favorite.png" class="menu-img"><p id="menu_collection">收藏</p></a>-->
+
+          </ion-item>
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.GiftBox">
+            <i class="icon ion-bowtie"></i>   <span ng-bind="'GiftBox'|translate"></span>
+            <!--<a href="#" class="show-submenu sidebar1-close" oncion-itemck="GiftBoxPage(1)"><img src="image/menu/gift box.png" class="menu-img"><p id="menu_GiftBox">礼物盒子</p><div id="interaction_gift" class="interaction_div"></div></a>-->
+
+          </ion-item>
+
+        </ion-list>
+        <ion-list class="sidebar-menu">
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.Encounter">
+            <i class="icon ion-ios-people-outline"></i>   <span ng-bind="'Encounter'|translate"></span>
+            <!--<a href="index.html" class="show-submenu sidebar1-close" oncion-itemck="encounterPage()"><img src="image/menu/encounters.png" class="menu-img"><p id="menu_encounter">邂逅</p></a>-->
+          </ion-item>
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.ReciprocalLiking">
+            <i class="icon ion-ios-rose"></i>   <span ng-bind="'ReciprocalLiking'|translate"></span>
+            <!--<a href="#" class="show-submenu sidebar1-close" oncion-itemck="LoveEachOtherPage()"><img src="image/menu/matchion-itemst.png" class="menu-img"><p id="menu_LoveEachOther">相互喜欢</p><div id="interaction_match" class="interaction_div"></div></a>-->
+
+          </ion-item>
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.ILikeThes">
+            <i class="icon ion-ios-heart-outline"></i>   <span ng-bind="'ILikeThes'|translate"></span>
+            <!--<a href="#" class="show-submenu sidebar1-close" oncion-itemck="Iion-itemkeThePage()"><img src="image/menu/who i ion-itemke.png" class="menu-img"><p id="menu_Iion-itemkeThe">我喜欢的</p></a>-->
+
+          </ion-item>
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.LikeMys">
+            <i class="icon ion-heart"></i>   <span ng-bind="'LikeMys'|translate"></span>
+            <!--<a href="#" class="show-submenu sidebar1-close" oncion-itemck="ion-itemkeMyPage()"><img src="image/menu/who ion-itemke me.png" class="menu-img"><p id="menu_ion-itemkeMy">喜欢我的</p><div id="interaction_passive" class="interaction_div"></div></a>-->
+          </ion-item>
+        </ion-list>
+
+        <ion-list class="sidebar-menu">
+          <ion-item menu-close="" class="item item-icon-left" ui-sref="app.setting">
+            <i class="icon ion-settings"></i>
+            <span ng-bind="'settingUp'|translate"></span>
+            <!--<a href="index.html" class="show-submenu sidebar1-close" oncion-itemck="Setting()"><img src="image/menu/setting.png" class="menu-img"><p id="menu_Setting">设置</p></a>-->
+          </ion-item>
+        </ion-list>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+  <ion-side-menu side="right">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">{{'Recentcontact'|translate}}</h1>
+    </ion-header-bar>
+    <ion-content class="dark-bg">
+      <ion-list class="list-inset side-bar-search-bar" ng-click="search()">
+        <ion-item class="item-input side-bar-search" ng-click="showModalSearch()">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" style="padding-left: 10px;font-size: 16px;font-weight: 400;" placeholder="{{'searchTitle'|translate}}">
+        </ion-item>
+      </ion-list>
+      <ion-list class="dark-bg side-bar-search-bar">
+
+        <ion-item class="right-sidebar-no-person">
+          <i class="ion-sad-outline"></i><br/><br/>
+          {{'visitors'|translate}}<br/><br/>
+          <a href="#">{{'SeeRecommended'|translate}}</a>
+        </ion-item>
+      </ion-list>
+      </div>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,48 @@
+<ion-view view-title="{{'settingUp'|translate}}">
+  <ion-content>
+    <ion-list>
+      <div class="item item-divider">
+
+      </div>
+      <item-icon class="item item-icon-left" style="padding: 5px;" href="#">
+        <div class="item-input item-select">
+        <div class="input-label" style="padding-left:33px;">
+          {{'languages'|translate}}
+        </div>
+        <select ng-options="language.value for language in languages" style="padding:5px 40px;" ng-model="selectLag" ng-change="changeLanguage(selectLag);">
+        </select></div>
+      </item-icon>
+
+      <item-icon class="item item-icon-left" href="#">
+        <i class="icon ion-locked"></i>
+        <div class="input-label">
+          {{'ChangePasswords'|translate}}
+        </div>
+      </item-icon>
+
+      <div class="item item-divider">
+
+      </div>
+      <item-icon class="item item-icon-left" >
+        <span class="item-text-wrap">
+          {{'AboutUs'|translate}}
+        </span>
+      </item-icon>
+
+      <item-icon class="item item-icon-left" ng-repeat="item in infoList" ng-click="showInfoModal(item)" >
+        <span class="item-text-wrap">
+          {{item|translate}}
+        </span>
+      </item-icon>
+
+
+      <div class="item item-divider">
+
+      </div>
+      <item-icon class="item item-icon-left assertive-bg" style="color: white;font-weight: 500;" ng-click="doLogout()">
+        <i class="icon ion-log-out"></i>
+          {{'WithdrawFromTheAccount'|translate}}
+      </item-icon>
+    </ion-list>
+  </ion-content>
+</ion-view>

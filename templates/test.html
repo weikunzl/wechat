@@ -1,0 +1,621 @@
+<div id="personal_homepage" class="page_content" style="display: none;" >
+				
+<div id="home_slider" class="flexslider" data-snap-ignore="true">
+</div>
+<div class="User-personal_homepage">
+	<div id="Head-portrait" class="Head-portrait">
+		  
+	</div>
+	<div class="Head-name">
+		<div id="Head-name" class="Head-name1"></div>
+		<div id="per-img-Diamon"></div>
+	</div>
+	<div class="img_Albumnumber">
+		<img src="image/Albumnumber.png" class="menu-img-xiangji">
+		<div id="Head-tupianshuliang" class="Head-xiangceshu">6</div>
+	</div>
+</div>
+<div class="personal_1">
+	<div id="personal_album" class="personal_album personal_style"  onclick="PhotoAlbumPage()">
+		
+	</div>
+	<a href='HeadPortrait.php' target='HeadPortrait' class="personal_collection personal_style" onclick="HeadPortraitPage()">
+	<div id="personal_collection" >
+		
+	</div>
+	</a>
+	<div id="personal_gift" class="personal_gift personal_style" onclick="GiftBoxPage()">
+		
+	</div>
+	
+	<div class="personal_chat_background">
+    	<a href='UploadPictures.php?Albumid=1' class="UploadPictures_a" target='Photo_Add_homepage'>
+    		<div id="personal_chat" class="personal_chat">
+    		
+    		</div>
+    	</a>
+	</div>
+	
+</div>
+<div class="per_botton_style">
+	<div id="per_left_abount" onclick="Personalbottonabount()">
+	
+	</div>
+	<div id="per_right_freshNews" onclick="PersonalbottonfreshNews()">
+		
+	</div>
+</div>
+<div id="per_freshNews" style="display: none;">
+	<div id="per_freshNews_list">
+	</div>
+	<div id="per_freshNews_submit" class="gengduo">
+		<input type="submit" tabindex="3" id="submit" value="更多" onclick="PersonalfreshNewsList()" class="s_btn s_btn_d">
+	</div>
+</div>
+<div id="per_personal_data">	
+	<div class="per-title">
+		<p id="per_abount_title"></p>
+	</div>
+	<div class="per-content">
+		<p id="per_about" onclick="personalContent('about')"></p>
+	</div>
+	<div class="per-title">
+		<p id="TheBasicInformation"></p>
+	</div>
+	<div class="per-content">
+		<div id="gender" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_gender"></div>
+	</div>
+	<div class="per-content" onclick="personalContent('birthday')">
+		<div id="birthday" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_age"></div>
+	</div>
+	<div class="per-content" onclick="personalContent('language')">
+		<div id="language" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_language"></div>
+	</div>
+	<div class="per-content" onclick="personalContent('weight')">
+		<div id="weight" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_weight"></div>
+	</div>
+	<div class="per-content" onclick="personalContent('height')">
+		<div id="height" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_height"></div>
+	</div>
+	<div class="per-title">
+		<p id="AffectionIsIntroduced"></p>
+	</div>
+	<div class="per-content" onclick="personalContent('sexuality')">
+		<div id="sexuality" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_sexuality"></div>
+	</div>
+	<div class="per-content" onclick="personalContent('relationship')">
+		<div id="relationship" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_relationship"></div>
+	</div>
+	<div class="per-title">
+		<p id="GeographicalPosition"></p>
+	</div>
+	<div class="per-content" onclick="personalContent('country')">
+		<div id="country" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_country"></div>
+	</div>
+	<div class="per-content" onclick="personalContent('city')">
+		<div id="city" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_city"></div>
+	</div>
+	<div class="per-title">
+		<p id="EducationAndWork"></p>
+	</div>
+	<div class="per-content" onclick="personalContent('education')">
+		<div id="education" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_education"></div>
+	</div>
+	<div class="per-content" onclick="personalContent('work')">
+		<div id="work" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_work"></div>
+	</div>
+	<div class="per-content"onclick="personalContent('income')">
+		<div id="income" class="per-left">
+			
+		</div>
+		<div class="per-right" id="per_income"></div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="../js/jquery.js?v=0.1" ></script>
+<script type="text/javascript" src="../js/jquery.flexslider-min.js?v=0.1" ></script>
+
+							
+		</div>
+		<!--- 个人主页修改资料 --->
+		<div id="personal_content_add" class="page_content" style="display: none;" >
+	
+		</div>
+		<!--- 修改头像 --->
+		<iframe id="HeadPortrait" class="page_content" src="" name="HeadPortrait" scrolling="auto" frameborder="0" allowtransparency="yes"   style="width:100%;display: none;">
+		</iframe>
+		
+		<iframe id="personal_content_homepage" class="page_content" src="txt-age.php" name="personal_homepage" scrolling="auto" frameborder="0" allowtransparency="yes"   style="width:100%;display: none;">
+		</iframe>
+		<!--- 相册 --->
+		<div id="PhotoAlbum_homepage" class="page_content" style="display: none;" >
+					
+		</div>
+		<!--- 添加相册 --->
+		<div id="PhotoAlbumAdd_homepage" class="page_content" style="display: none;" >
+			<div class="album_page">
+				<div class="album_input">
+					<input id="album" name="album" type="text" placeholder="">
+				</div>
+					<input name="submit" tabindex="3" type="submit" id="PhotoAlbumAdd_input" value="" onclick="PhotoAlbumAdd()"  class="album_input_style"/>
+			</div>		
+		</div>
+		<!--- 照片 --->
+		<iframe id="Photo_homepage" class="page_content" src="" name="Photo_homepage" scrolling="auto" frameborder="0" allowtransparency="yes"   style="width:100%;display: none;">
+		</iframe>
+		<!--- 照片添加 --->
+		<iframe id="Photo_Add_homepage" class="page_content" src="" name="Photo_Add_homepage" scrolling="auto" frameborder="0" allowtransparency="yes"   style="width:100%;display: none;">
+		</iframe>
+		<!--- 升级 --->
+		<div id="Upgrade_homepage"  class="page_content" style="display: none;">
+				<div class="upgrade-synopsis">
+				<div id="upgrade-title"></div>
+				<div class="upgrade-content">
+					<div class="upgrade-content-img">
+						<img src="../image/languageselect.png" style="width: 25px;">
+					</div>
+					<div id="upgrade-content-1" class="upgrade-content-style">
+					
+					</div>
+				</div>
+				<div class="upgrade-content">
+					<div class="upgrade-content-img">
+						<img src="../image/languageselect.png" style="width: 25px;">
+					</div>
+					<div id="upgrade-content-2" class="upgrade-content-style">
+					
+					</div>
+				</div>
+				<div class="upgrade-content">
+					<div class="upgrade-content-img">
+						<img src="../image/languageselect.png" style="width: 25px;">
+					</div>
+					<div id="upgrade-content-3" class="upgrade-content-style">
+					
+					</div>
+				</div>
+			</div>
+			<div class="upgrade-title-style">
+				<div class="upgrade-content-img">
+					<img src="image/Diamond1.png" style="width: 25px;">
+				</div>
+				<div id="upgrade-Blue-diamond" class="upgrade-content-style">
+					
+				</div>
+			</div>
+			<div id="upgrade_Blue_diamond">
+				<div class="upgrade-border" onClick="upgradeopen('150',2,1,12)">
+					<div class="upgrade-border1">$12.5/月</div>
+					<div class="upgrade-border2">150$/年</div>
+					<div class="upgrade-border3">节省<br><span style="color:red">37.5%</span></div>
+				</div>
+				<div class="upgrade-border" onClick="upgradeopen('90',2,1,6)">
+					<div class="upgrade-border1">$15.0/月</div>
+					<div class="upgrade-border2">90$/6月</div>
+					<div class="upgrade-border3">节省<br><span style="color:red">25%</span></div>
+				</div>
+				<div class="upgrade-border" onClick="upgradeopen('50',2,1,3)">
+					<div class="upgrade-border1">$16.6/月</div>
+					<div class="upgrade-border2">50$/3月</div>
+					<div class="upgrade-border3">节省<br><span style="color:red">16.7%</span></div>
+				</div>
+				<div class="upgrade-border" onClick="upgradeopen('20',2,1,1)">
+					<div class="upgrade-border1">$20.0/月</div>
+					<div class="upgrade-border2">20$/1月</div>
+					<div class="upgrade-border3"></div>
+				</div>	
+			</div>
+			<div class="upgrade-title-style">
+				<div class="upgrade-content-img">
+					<img src="image/crown1.png" style="width: 25px;">
+				</div>
+				<div id="upgrade-crown" class="upgrade-content-style">
+					
+				</div>
+			</div>
+			<div id="upgrade_crown">
+				<div class="upgrade-border" onClick="upgradeopen('749',2,2,12)">
+					<div class="upgrade-border1">$62.42/月</div>
+					<div class="upgrade-border2">749$/年</div>
+					<div class="upgrade-border3">节省<br><span style="color:red">68.8%</span></div>
+				</div>
+				<div class="upgrade-border" onClick="upgradeopen('499',2,2,6)">
+					<div class="upgrade-border1">$74.83/月</div>
+					<div class="upgrade-border2">499$/6月</div>
+					<div class="upgrade-border3">节省<br><span style="color:red">62.6%</span></div>
+				</div>
+				<div class="upgrade-border" onClick="upgradeopen('249',2,2,3)">
+					<div class="upgrade-border1">$83.0/月</div>
+					<div class="upgrade-border2">249$/3月</div>
+					<div class="upgrade-border3">节省<br><span style="color:red">58.5%</span></div>
+				</div>
+				<div class="upgrade-border" onClick="upgradeopen('99',2,2,1)">
+					<div class="upgrade-border1">$99.0/月</div>
+					<div class="upgrade-border2">99$/1月</div>
+					<div class="upgrade-border3"></div>
+				</div>
+			</div>
+				
+		</div>
+		<div id="goldbg"  style="display: none;" onClick="upgradeclose()"></div>
+
+			<div id="upgrade_button" style="display: none;">
+				<div id="upgrade_name">支付方式</div>
+				<div id="alipay" onclick="alipaybotton()">
+					<div class="pay_img"><div id="alipay1" class="alipay_img" style="display:block"><img src="image/languageselect.png" class="ali_class_imgs"></div></div>
+					<div class="alipay_class"><img src="image/paypal.png" class="ali_class_img"></div>
+				</div>
+				<div id="Paypal" onclick="Paypalbotton()">
+					<div class="pay_img"><div id="Paypal1" class="alipay_img" style="display:none"><img src="image/languageselect.png" class="ali_class_imgs"></div></div>
+					<div class="alipay_class"><img src="image/zhifu.jpg.png" class="ali_class_img"></div>
+				</div>	
+					<form id="formtest" action="http://www.perdate.com/member/alipay.jsp" method="post" style="display:none">
+						<div id="" class="">
+							<input type="hidden" id="membership" name="membership" value="0" />
+							<input type="hidden" id="income" name="income" value="20" />
+							<input type="hidden" id="type" name="type" value="2" />
+							<input type="hidden" id="month" name="month" value="0" />
+							<input type="hidden" id="customId" name="customId" value="" />
+							<input type="hidden" id="userId" name="token" value="" />
+							<input type="hidden" id="payment" name="payment" value="5" />
+							<div id="dialog_pay_upgrade_btn" class="dialog_pay_panel_pay_way_send dialog_pay_panel_pay_way_send_hover">
+								<input type="submit" tabindex="3" id="upgradep_r_paypal" value="立即升级" class="s_btn s_btn_d">
+							</div>
+						</div>
+					</form>
+					<form id="formtest2" action="http://www.perdate.com/pp_android.do" method="post" style="display:block">
+						<div id="" class="">
+							<input type="hidden" id="membership1" name="membership" value="0" />
+							<input type="hidden" id="income1" name="income" value="20" />
+							<input type="hidden" id="type1" name="type" value="2" />
+							<input type="hidden" id="month1" name="month" value="0" />
+							<input type="hidden" id="customId1" name="customId" value="" />
+							<input type="hidden" id="userId1" name="token" value="" />
+							<input type="hidden" id="payment" name="payment" value="6" />
+							<div id="dialog_pay_upgrade_btn" class="dialog_pay_panel_pay_way_send dialog_pay_panel_pay_way_send_hover">
+								<input type="submit" tabindex="3" id="upgradep_r_su" value="立即升级" class="s_btn s_btn_d">
+							</div>
+						</div>
+					</form>	
+			</div>
+			
+		<!-- 获得金币 -->
+		<div id="gold_homepage" class="page_content" style="display: none;">
+			<div  class="gold_balance">
+				<div class="gold_balance_img">
+					<img src="../image/gold1.png" style="width: 35px;">
+				</div>
+				<div id="gold_balance_content" class="gold_balance_content">
+					
+				</div>
+			</div>
+			<div id="gold_title_page" class="gold_title">
+				
+			</div>
+			<div id="gold_content">
+				<div class="gold_content_style" onClick="upgradeopen('500',1)">
+				<div class="gold_content_img">
+				<img src="../image/gold1.png" style="width: 35px;">
+				</div>
+				<div class="gold_content_font">500金币/$500</div>
+				</div>
+				<div class="gold_content_hot" onClick="upgradeopen('200',1)">
+				<div class="gold_content_img">
+				<img src="../image/gold1.png" style="width: 35px;">
+				</div>
+				<div class="gold_content_font">200金币/$200</div>
+				</div>
+				<div class="gold_content_style" onClick="upgradeopen('100',1)">
+				<div class=" gold_content_img">
+				<img src="../image/gold1.png" style="width: 35px;">
+				</div>
+				<div class="gold_content_font">100金币/$100</div>
+				</div>
+				<div class="gold_content_style" onClick="upgradeopen('50',1)">
+				<div class="gold_content_img">
+				<img src="../image/gold1.png" style="width: 35px;">
+				</div><div class="gold_content_font">50金币/$50</div>
+				</div>
+				<div class="gold_content_style" onClick="upgradeopen('20',1)">
+				<div class="gold_content_img">
+				<img src="../image/gold1.png" style="width: 35px;">
+				</div>
+				<div class="gold_content_font">20金币/$20</div>
+				</div>
+			</div>	
+		</div>
+		
+		<!-- 表情贴商店 -->
+		<div id="Expression_post_shop_homepage" class="page_content" style="display: none;">
+			<div class="shop-b">
+				<img src="image/640X300.png"  style="width: 100%;">
+			</div>
+			<div id="Expression_list">
+				
+			</div>
+		</div>
+		<!-- 表情贴详细界面 -->
+		<div id="Expressions_posted_in_detail_homepage" class="page_content" style="display: none;">
+			<div id='ExpressionDetailimg'></div>
+			<div id='ExpressionDetaillest'></div>
+			
+		</div>
+		<!-- 新鲜事 -->
+		<div id="freshNews_homepage" class="page_content" style="display: none;  background: #EDEDED;">
+
+			<div id="freshNews_list">
+			</div>
+
+			<div id="freshNews_submit" class="gengduo">
+				<input type="submit" tabindex="3" id="submit" value="更多" onclick="freshNewsList()" class="s_btn s_btn_d">
+			</div>
+			
+		</div>
+		<div id="freshNews_sharebg" class="ExitAccount_style" style="display: none;" onclick="freshNewsShareClose()">
+			</div>
+			<div id="freshNews_share" style="display: none;">
+				<div id="qzOpeners" class="share_div"></div>
+				<div id="qcShareqqs" class="share_div"></div>
+				<div id="weiboSharexinlangs" class="share_div"></div>
+				<div id="weixinShares" class="share_div"><div  onclick="veixinShare()" ><img src='products/slideout/images/weixin.png' class='class-img'></div></div>
+				<div id="twitterShares" class="share_div"><div><a class="fav_twitter" rel="nofollow" href="javascript:window.open('http://twitter.com/home?status='+encodeURIComponent('http://perdate.com/')+' '+encodeURIComponent(document.title));void(0)"><img src='products/slideout/images/twitter.png' class='class-img'></a></div></div>
+				<div id="vkShares" class="share_div">
+				</div>
+				<div id="fbShares" class="share_div"><div><a class="fav_facebook" rel="nofollow" href="javascript:window.open('http://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://perdate.com/')+'&amp;t='+encodeURIComponent(document.title));void(0)"><img src='products/slideout/images/fb.png' class='class-img'></a></div></div>				
+			</div>
+		<!-- 新鲜事添加 -->
+		<div id="freshNewsAdd_homepage" class="page_content" style="display: none;  background: #EDEDED;" data-snap-ignore="true">
+			<div class="freshNewsAdd_style">
+				<div class="freshNewsAdd_text">
+					<textarea id="freshNewsAdd_textarea" placeholder="" cols="" rows="6"></textarea>
+				</div>
+				
+				<div class="freshNewsAdd_botton">
+					<div class="freshNewsAdd_img" onclick="freshNewsExpressions()">
+						<img src="image/sticker.png" class="freshNews-img">
+					</div>
+					<div class="freshNewsAdd_img">
+						<input type="file" name="filefreshNewsimg" id="filefreshNewsimg" accept="image/*" onchange="javascript:freshNewsFile();" />
+						<img src="image/photo.png" class="freshNews-img" style="z-index: 2;">
+					</div>
+					<div class="freshNewsAdd_img">
+						<img src="image/translation.png" class="freshNews-img">
+					</div>
+				</div>
+				
+				</div>
+				<div id="freshNews_img">
+				</div>
+				<div id="freshNewsAdd_Expressions" class="freshNewsAdd_Expression" style="display: none;">
+					<div class="gwx_face_outer">
+						<img src="image/faces/face1.gif" onclick="freshNewsExpressionsAdd('Smile')" title="Smile" class="gwx_face_face">
+						<img src="image/faces/face2.gif" onclick="freshNewsExpressionsAdd('Grimace')" title="Grimace" class="gwx_face_face">
+						<img src="image/faces/face3.gif" onclick="freshNewsExpressionsAdd('Drooling')" title="Drooling" class="gwx_face_face">
+						<img src="image/faces/face4.gif" onclick="freshNewsExpressionsAdd('Scowl')" title="Scowl" class="gwx_face_face">
+						<img src="image/faces/face5.gif" onclick="freshNewsExpressionsAdd('Chill')" title="Chill" class="gwx_face_face">
+						<img src="image/faces/face6.gif" onclick="freshNewsExpressionsAdd('Sob')" title="Sob" class="gwx_face_face">
+						<img src="image/faces/face7.gif" onclick="freshNewsExpressionsAdd('Shy')" title="Shy" class="gwx_face_face">
+						<img src="image/faces/face8.gif" onclick="freshNewsExpressionsAdd('Silence')" title="Silence" class="gwx_face_face">
+						<img src="image/faces/face9.gif" onclick="freshNewsExpressionsAdd('Cry')" title="Cry" class="gwx_face_face">
+						<img src="image/faces/face10.gif" onclick="freshNewsExpressionsAdd('Embarrassed')" title="Embarrassed" class="gwx_face_face">
+						<img src="image/faces/face11.gif" onclick="freshNewsExpressionsAdd('On fire')" title="On fire" class="gwx_face_face">
+						<img src="image/faces/face12.gif" onclick="freshNewsExpressionsAdd('Wink')" title="Wink" class="gwx_face_face">
+						<img src="image/faces/face13.gif" onclick="freshNewsExpressionsAdd('Grin')" title="Grin" class="gwx_face_face">
+						<img src="image/faces/face14.gif" onclick="freshNewsExpressionsAdd('Surprised')" title="Surprised" class="gwx_face_face">
+						<img src="image/faces/face15.gif" onclick="freshNewsExpressionsAdd('Sad')" title="Sad" class="gwx_face_face">
+						<img src="image/faces/face16.gif" onclick="freshNewsExpressionsAdd('Cool')" title="Cool" class="gwx_face_face">
+						<img src="image/faces/face17.gif" onclick="freshNewsExpressionsAdd('Frightened')" title="Frightened" class="gwx_face_face">
+						<img src="image/faces/face18.gif" onclick="freshNewsExpressionsAdd('Scream')" title="Scream" class="gwx_face_face">
+						<img src="image/faces/face19.gif" onclick="freshNewsExpressionsAdd('Puke')" title="Puke" class="gwx_face_face">
+						<img src="image/faces/face20.gif" onclick="freshNewsExpressionsAdd('Chuckle')" title="Chuckle" class="gwx_face_face">
+						<img src="image/faces/face21.gif" onclick="freshNewsExpressionsAdd('Lovely')" title="Lovely" class="gwx_face_face">
+						<img src="image/faces/face22.gif" onclick="freshNewsExpressionsAdd('Sneer')" title="Sneer" class="gwx_face_face">
+						<img src="image/faces/face23.gif" onclick="freshNewsExpressionsAdd('Arrogant')" title="Arrogant" class="gwx_face_face">
+						<img src="image/faces/face24.gif" onclick="freshNewsExpressionsAdd('Hungry')" title="Hungry" class="gwx_face_face">
+						<img src="image/faces/face25.gif" onclick="freshNewsExpressionsAdd('Drowsy')" title="Drowsy" class="gwx_face_face">
+						<img src="image/faces/face26.gif" onclick="freshNewsExpressionsAdd('Panic')" title="Panic" class="gwx_face_face">
+						<img src="image/faces/face27.gif" onclick="freshNewsExpressionsAdd('Sweating')" title="Sweating" class="gwx_face_face">
+						<img src="image/faces/face28.gif" onclick="freshNewsExpressionsAdd('Laugh')" title="Laugh" class="gwx_face_face">
+						<img src="image/faces/face29.gif" onclick="freshNewsExpressionsAdd('Soldier')" title="Soldier" class="gwx_face_face">
+						<img src="image/faces/face30.gif" onclick="freshNewsExpressionsAdd('Strive')" title="Strive" class="gwx_face_face">
+						<img src="image/faces/face31.gif" onclick="freshNewsExpressionsAdd('Scold')" title="Scold" class="gwx_face_face">
+						<img src="image/faces/face32.gif" onclick="freshNewsExpressionsAdd('Confused')" title="Confused" class="gwx_face_face">
+						<img src="image/faces/face33.gif" onclick="freshNewsExpressionsAdd('Shhh')" title="Shhh" class="gwx_face_face">
+						<img src="image/faces/face34.gif" onclick="freshNewsExpressionsAdd('Hypnotized')" title="Hypnotized" class="gwx_face_face">
+						<img src="image/faces/face35.gif" onclick="freshNewsExpressionsAdd('Torment')" title="Torment" class="gwx_face_face">
+						<img src="image/faces/face36.gif" onclick="freshNewsExpressionsAdd('Frustrated')" title="Frustrated" class="gwx_face_face">
+						<img src="image/faces/face37.gif" onclick="freshNewsExpressionsAdd('Skull')" title="Skull" class="gwx_face_face">
+						<img src="image/faces/face38.gif" onclick="freshNewsExpressionsAdd('Hammer')" title="Hammer" class="gwx_face_face">
+						<img src="image/faces/face39.gif" onclick="freshNewsExpressionsAdd('Wave/Bye')" title="Wave/Bye" class="gwx_face_face">
+						<img src="image/faces/face40.gif" onclick="freshNewsExpressionsAdd('Relived')" title="Relived" class="gwx_face_face">
+						<img src="image/faces/face41.gif" onclick="freshNewsExpressionsAdd('Pick nose')" title="Pick nose" class="gwx_face_face">
+						<img src="image/faces/face42.gif" onclick="freshNewsExpressionsAdd('Applause')" title="Applause" class="gwx_face_face">
+						<img src="image/faces/face43.gif" onclick="freshNewsExpressionsAdd('Flushed')" title="Flushed" class="gwx_face_face">
+						<img src="image/faces/face44.gif" onclick="freshNewsExpressionsAdd('Hellooo')" title="Hellooo" class="gwx_face_face">
+						<img src="image/faces/face45.gif" onclick="freshNewsExpressionsAdd('Snub1')" title="Snub1" class="gwx_face_face">
+						<img src="image/faces/face46.gif" onclick="freshNewsExpressionsAdd('Snub2')" title="Snub2" class="gwx_face_face">
+						<img src="image/faces/face47.gif" onclick="freshNewsExpressionsAdd('Yawn')" title="Yawn" class="gwx_face_face">
+						<img src="image/faces/face48.gif" onclick="freshNewsExpressionsAdd('Booo')" title="Booo" class="gwx_face_face">
+						<img src="image/faces/face49.gif" onclick="freshNewsExpressionsAdd('Distressed')" title="Distressed" class="gwx_face_face">
+						<img src="image/faces/face50.gif" onclick="freshNewsExpressionsAdd('Sniffle')" title="Sniffle" class="gwx_face_face">
+						<img src="image/faces/face51.gif" onclick="freshNewsExpressionsAdd('Sly')" title="Sly" class="gwx_face_face">
+						<img src="image/faces/face52.gif" onclick="freshNewsExpressionsAdd('Pucker')" title="Pucker" class="gwx_face_face">
+						<img src="image/faces/face53.gif" onclick="freshNewsExpressionsAdd('Scared')" title="Scared" class="gwx_face_face">
+						<img src="image/faces/face54.gif" onclick="freshNewsExpressionsAdd('Pathetic')" title="Pathetic" class="gwx_face_face">
+						<img src="image/faces/face55.gif" onclick="freshNewsExpressionsAdd('Petrified')" title="Petrified" class="gwx_face_face">
+						<img src="image/faces/face56.gif" onclick="freshNewsExpressionsAdd('Speechless')" title="Speechless" class="gwx_face_face">
+						<img src="image/faces/facedelect.png" title="facedelect" class="gwx_face_facedelect">
+					</div>
+				</div>
+			
+		</div>
+		<!-- 来访 -->
+		<div id="visiting_homepage" class="page_content" style="display: none;">
+			<div id="visiting_list">
+			</div>
+			<div id="visiting_submit" class="gengduo">
+				<input type="submit" tabindex="3" id="submit_v" class="submit" value="更多" onclick="visitingList()" class="s_btn s_btn_d">
+			</div>
+		</div>
+		<!-- 收藏 -->
+		<div id="collection_homepage" class="page_content" style="display: none;">
+			<div id="collection_list">
+			</div>
+			<div id="collection_submit" class="gengduo">
+				<input type="submit" tabindex="3" id="submit_c"  class="submit" value="更多" onclick="collectionList()" class="s_btn s_btn_d">
+			</div>
+		</div>
+		<!-- 礼物 -->
+		<div id="Gifts_homepage" class="page_content" style="display: none;">
+			<div id="Gifts_list">
+			</div>
+			<div id="Gifts_submit" class="gengduo">
+				<input type="submit" tabindex="3" id="submit"  class="submit" value="更多" onclick="SendGiftLest()" class="s_btn s_btn_d">
+			</div>
+		</div>
+		<!-- 礼物详细 -->
+		<div id="detail_homepage" class="page_content" style="display: none;">
+			<div id="Gifts_detail">
+			</div>
+			<input type="hidden" id="InputRealId" name="realId" value="" />
+			<input type="hidden" id="Detailgold_price" name="realprice" value="" />
+		</div>
+		<div  id="Detail_botton" class="DetailDutton" onclick="GiftSend(1,0)">
+				
+		</div>	
+		<!-- 礼物盒子 -->
+		<div id="GiftBox_homepage" class="page_content" style="display: none;">
+			<div id="GiftBox_list">
+			</div>
+		</div>
+		<!-- 邂逅 -->
+		<div id="encounter_homepage" class="page_content" style="display: none;">
+			<div id="encounter_title">
+			</div>
+			<div id="encounter_img">
+			</div>
+			<input type="hidden" id="likeId" name="likeId" value="1" />
+			<div class="encounter_button">
+				<div class="encounter_button_yes" onclick="encounterlikes()">
+					<div class='freshNews_bottons1'>
+						<div class="encounter_button_img">
+							<img src="image/encounterlove.png" style="width: 18px;">
+						</div>
+						<div class="encounter_button_font">
+							yes
+						</div>
+					</div>
+				</div>
+				<div class="encounter_button_no" onclick="encounterOperation()">
+					<div class='freshNews_bottons1'>
+						<div class="encounter_button_img">
+							<img src="image/encounterimno.png" style="width: 18px;">
+						</div>
+						<div class="encounter_button_font">
+						no
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<!--  --->
+		<div id="Love_lest" class="page_lest" style="display: none;">
+			
+			<div id="ILikeThe_title" class="love_style" onclick="ILikeThePage()">
+			</div>
+			<div id="LikeMy_title"  class="love_style"  onclick="LikeMyPage()">
+			</div>
+			<div id="LoveEachOther_title"  class="love_style" onclick="LoveEachOtherPage()">
+			</div>
+		</div>
+		<!-- 互相喜欢 LoveEachOther -->
+		<div id="LoveEachOther_homepage" class="page_love_content" style="display: none;">
+			<div id="LoveEachOther_lest">
+			</div>
+			<div id="LoveEachOther_submit" class="gengduo">
+				<input type="submit" tabindex="3" id="submit_l" value="更多"  class="submit" onclick="LoveEachOther()" class="s_btn s_btn_d">
+			</div>
+		</div> 
+		<!-- 我喜欢的 ILikeThe -->
+		<div id="ILikeThe_homepage" class="page_love_content" style="display: none;">
+			<div id="ILikeThe_lest">
+			</div>
+			<div id="ILikeThe_submit" class="gengduo">
+				<input type="submit" tabindex="3" id="submit_i" value="更多"  class="submit" onclick="ILikeThe()" class="s_btn s_btn_d">
+			</div>
+		</div>
+		<!-- 喜欢我的 LikeMy -->
+		<div id="LikeMy_homepage" class="page_love_content" style="display: none;">
+			<div id="LikeMy_lest">
+			</div>
+			<div id="LikeMy_submit" class="gengduo">
+				<input type="submit" tabindex="3" id="submit_m" value="更多"  class="submit" onclick="LikeMy()" class="s_btn s_btn_d">
+			</div>
+		</div>
+		<!-- 设置 Setting -->	
+		<div  id="Setting_homepage" class="page_content" style="display: none;">
+			<div id="change_password" class="setting_style" onclick="ChangePasswordpage()">
+				修改密码
+			</div>
+			<div id="About_Us" class="setting_style" onclick="AboutUspage()">
+				关于我们
+			</div>
+			<div id="Dating_Safety" class="setting_style" onclick="DatingSafety()">
+				交友安全
+			</div>
+			<div id="Terms_of_use" class="setting_style" onclick="TermsOfUse(1)">
+				使用条款
+			</div>
+			<div id="Privacy_policy" class="setting_style" onclick="PrivacyPolicy(1)">
+				隐私政策
+			</div>
+			<div id="exit_account" class="setting_style" onclick="ExitAccount()">
+				退出账号
+			</div>
+			<div id="ExitAccount_id1" class="ExitAccount_style"  style="display: none;" onclick="ExitAccountcancel()">
+			</div>
+			<div id="ExitAccount_div"  style="display: none;">
+				<div class='ExitAccount-top'>
+					<div id="ExitAccount_1" class='ExitAccount-style'>提示</div>
+					<div class='' id="ExitAccount_2">是否退出？</div>
+				</div>
+				<div class='ExitAccount-botton'>
+					<div id="ExitAccount_3" class='ExitAccount_left' onclick="ExitAccountcancel()">取消</div>
+					<div id="ExitAccount_4" class='ExitAccount_right' onclick="ExitAccountcance2()">确定</div>
+				</div>
+					
+			</div>		</div>

@@ -1,0 +1,48 @@
+
+<ion-view view-title="{{'ForgotPassword'|translate}}">
+  <ion-content id="home_login">
+    <ion-list>
+      <ion-item class="item item-divider">
+
+      </ion-item>
+    </ion-list>
+    <ion-list class="list text-left" >
+      <ion-item class="item item-input item-stacked-label reg_form_input" >
+        <span class="input-label">{{'Mailbox'|translate}}</span>
+        <input type="email" placeholder="{{'register_input_email'|translate}}" ng-model="user.email" required>
+      </ion-item>
+    <ion-list class="list"><ion-item class="item item-divider">
+
+    </ion-list>
+    <ion-list class="text-right" style="border: 0;"><ion-item class="item item-divider" style="border: 0;"><a ui-sref="login.tab.in"><i class="ion-reply"></i>{{'Landed'|translate}}</a></ion-item></ion-list>
+
+    <div class="padding">
+      <button class="button button-block button-positive">{{'Forgot_send'|translate}}</button>
+    </div>
+    <ion-list class="text-center" >
+      <ion-item class="item item-divider item-text-wrap  " style="font-size: 13px;font-weight: 500;border: 0;line-height: 1;">{{'ForgotPasswordCont'|translate}}</ion-item>
+
+
+    <!--
+    <div class="Quick-style">
+      <div id="Quick_login">{{'Quick_login'|translate}}</div>
+      <div class="Quick-div">
+        <div class="Quick-div-style" ng-click="QQLogin()">
+          <img src='image/qq.png' class='class-img'>
+        </div>
+        <div class="Quick-div-style" >
+          <a href="http://www.charmmeet.com/weixin.php"><img src='image/weixin.png' class='class-img'></a>
+        </div>
+        <div class="Quick-div-style" style="display: none;">
+          <img src='image/twitter.png' class='class-img'>
+        </div>
+        <div class="Quick-div-style" ng-click="vkLogin()">
+          <img src='image/vk.png' class='class-img'>
+        </div>
+        <div class="Quick-div-style" ng-click="fbLogin()">
+          <img src='image/fb.png' class='class-img'>
+        </div>
+      </div>
+    </div>-->
+  </ion-content>
+</ion-view>

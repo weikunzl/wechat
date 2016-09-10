@@ -1,0 +1,90 @@
+
+<ion-view view-title="{{'Register'|translate}}">
+  <ion-content ng-show="!regSuccess">
+    <ion-list>
+      <ion-item class="item item-divider">
+        <ion-list class="text-center" >
+          <ion-item class="item item-divider item-text-wrap  " style="font-size: 13px;font-weight: 500;border: 0;line-height: 1;"> {{'register_oauth'|translate}}</ion-item>
+
+
+      </ion-item>
+    </ion-list>
+    <ion-list class="list text-left" >
+      <ion-item class="item item-input item-stacked-label reg_form_input">
+        <span class="input-label">{{'Username'|translate}}</span>
+        <input type="text" placeholder="{{'register_input_name'|translate}}" ng-model="user.username" required>
+      </ion-item>
+      <ion-item class="item item-input item-stacked-label reg_form_input" >
+        <span class="input-label">{{'Mailbox'|translate}}</span>
+        <input type="email" placeholder="{{'EnterMailbox'|translate}}" ng-model="user.email" required>
+      </ion-item>
+      <ion-item class="item item-input item-stacked-label reg_form_input" >
+        <span class="input-label">{{'Password'|translate}}</span>
+        <input type="password" placeholder="{{'EnterPassword'|translate}}" ng-model="user.password" required>
+      </ion-item>
+      <ion-item class="item item-input item-stacked-label reg_form_input" >
+        <span class="input-label">{{'Birthday'|translate}}</span>
+        <input type="date" ng-model="user.Birthday" ng-focus="showDatePicker()" placeholder="{{'SelectBirthday'|translate}}" required>
+      </ion-item>
+      <ion-item class="item item-input">
+        <span class="input-label">{{'Sex'|translate}}</span>
+        <ion-checkbox class="inline male" style="border:0;" ng-checked="user.gender!=2" ng-click="user.gender=1" ng-value="1">{{'boy'|translate}}</ion-checkbox>
+        <ion-checkbox class="inline female" style="border:0;"  ng-checked="user.gender==2" ng-click="user.gender=2" ng-value="2">{{'girl'|translate}}</ion-checkbox>
+      </ion-item>
+    </ion-list>
+    <ion-list class="list"><ion-item class="item item-divider">
+
+    </ion-list>
+    <ion-list class="text-right" style="border: 0;"><ion-item class="item item-divider" style="border: 0;"><a ng-click="state.go('login.tab.in')"><i class="ion-reply"></i>{{'Landed'|translate}}</a></ion-item></ion-list>
+
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="doReg()">{{'PVp_r_su'|translate}}</button>
+    </div>
+    <ion-list class="text-center" >
+      <ion-item class="item item-divider " style="font-size: 13px;font-weight: 500;border: 0;">{{'register_clause1'|translate}}<a href="#" ng-click="showInfoModal('TermsOfUses')">{{'TermsOfUses'|translate}}</a>
+      {{'register_clause2'|translate}}<a href="#" ng-click="showInfoModal('PrivacyPolicys')">{{'PrivacyPolicys'|translate}}</a></ion-item>
+      <ion-item class="item item-divider" style="font-size: 13px;font-weight: 500;border: 0;">{{'register_clause3'|translate}}</ion-item></ion-list>
+
+
+    <!--
+    <div class="Quick-style">
+      <div id="Quick_login">{{'Quick_login'|translate}}</div>
+      <div class="Quick-div">
+        <div class="Quick-div-style" ng-click="QQLogin()">
+          <img src='image/qq.png' class='class-img'>
+        </div>
+        <div class="Quick-div-style" >
+          <a href="http://www.charmmeet.com/weixin.php"><img src='image/weixin.png' class='class-img'></a>
+        </div>
+        <div class="Quick-div-style" style="display: none;">
+          <img src='image/twitter.png' class='class-img'>
+        </div>
+        <div class="Quick-div-style" ng-click="vkLogin()">
+          <img src='image/vk.png' class='class-img'>
+        </div>
+        <div class="Quick-div-style" ng-click="fbLogin()">
+          <img src='image/fb.png' class='class-img'>
+        </div>
+      </div>
+    </div>-->
+  </ion-content>
+
+  <ion-content ng-show="regSuccess">
+    <ion-list class="card">
+
+      <ion-item class="item">
+        <h2>{{'HeadPortrait'|translate}}</h2>
+      </ion-item>
+
+      <ion-item class="item item-image photo-upload-panel" >
+
+        <img id="tempImage" class="photo-upload-img" src="cover.jpg">
+      </ion-item>
+
+      <ion-item class="item" >
+        <button class="button button-block button-positive" ng-click="doReg()"><i class="icon ion-upload"></i>{{'HeadPortrait'|translate}}</button>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-view>

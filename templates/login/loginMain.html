@@ -1,0 +1,55 @@
+<ion-view id="block_home_content" class="block_home_slider"  style="display: block;">
+
+  <div id="bgcupid_bg" style="display: block;">
+  </div>
+  <div id="home-top"  style="display: block;">
+    <div id="language_div_bg" style="display: none;" ng-click="languagediv()"></div>
+    <div class="language_botton" ng-click="languagediv()">
+      <span id="language_jianti">{{language_jianti}}</span>
+    </div>
+
+    <div id="language_div" style="display: none;">
+      <div id="language_title">
+        {{language_title}}
+      </div>
+      <a href="" id="home_zh" class="home-lang " ng-click="languagebotton('cn')">
+        简体中文
+      </a>
+      <a href="" id="home_TW" class="home-lang " ng-click="languagebotton('tw')">
+        中文-繁體
+      </a>
+      <a href="" id="home_en" class="home-lang" ng-click="languagebotton('en')">
+        English
+      </a>
+      <a href="" id="home_ja" class="home-lang" ng-click="languagebotton('ja')">
+        日本語
+      </a>
+      <a href="" id="home_ko" class="home-lang" ng-click="languagebotton('ko')">
+        한국의
+      </a>
+      <a href="" id="home_de" class="home-lang" ng-click="languagebotton('de')">
+        Deutsch
+      </a>
+      <a href="" id="home_es" class="home-lang" ng-click="languagebotton('es')">
+        Español
+      </a>
+      <a href="" id="home_fr" class="home-lang" ng-click="languagebotton('fr')">
+        Français
+      </a>
+      <a href="" id="home_it" class="home-lang" ng-click="languagebotton('it')">
+        Italiano
+      </a>
+      <a href="" id="home_nl" class="home-lang" ng-click="languagebotton('nl')">
+        Nederlandse
+      </a>
+      <a href="" id="home_pt" class="home-lang" ng-click="languagebotton('pt')">
+        Português
+      </a>
+      <a href="" id="home_ru" class="home-lang" ng-click="languagebotton('ru')">
+        Русский
+      </a>
+    </div>
+
+  </div>
+  <ion-nav-view name="loginContent"></ion-nav-view>
+</ion-view>

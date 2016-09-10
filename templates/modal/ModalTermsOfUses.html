@@ -1,0 +1,19 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">{{'TermsOfUses'|translate}}</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeModal('TermsOfUses')">{{'Shutdown'|translate}}</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doLogin()">
+      <ion-list class="content">
+        <div ng-repeat="item in [1,2,3,4,5,6,7,8,9,10,11,12]" class="{{$index%2==0?'':'h4'}}">
+          &nbsp;&nbsp;&nbsp;&nbsp;{{'TermsOfUseContent'+($index+1)|translate}}</div>
+
+        <div ng-repeat="item in [13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28]" class="{{$index%2==1?'':'h4'}}">
+          &nbsp;&nbsp;&nbsp;&nbsp;{{'TermsOfUseContent'+(item)|translate}}</div>
+      </ion-list>
+    </form>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,217 @@
+<ion-view view-title="{{'personalhomepages'|translate}}">
+  <ion-content>
+  <div id="preloader" style="display: none">
+      <div id="status">
+        <p class="center-text">
+        Loading the content...
+          <em>Loading depends on your connection speed!</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="slide-wrapper">
+      <ion-slide-box style="padding: 0;" active-slide="activeSlide" does-continue="true" auto-play="true"
+                     on-slide-changed="slideChanged(index)" show-pager="false">
+        <ion-slide>
+          <div class="slide">
+            <img ng-src="img/pictures/3.jpg" class="responsive-image" alt="Swipe me!">
+
+            <div class="slider-caption">
+              <h3>Swipe me!</h3>
+
+              <p>Hope you enjoy our latest item!</p>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="slide">
+            <img ng-src="img/pictures/5.jpg" class="responsive-image" alt="Slider">
+
+            <div class="slider-caption" style="text-align: left">
+              <h3>Slider</h3>
+
+              <p>Our slider is awesome!</p>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="slide">
+            <img ng-src="img/pictures/6.jpg" class="responsive-image" alt="Responsive">
+
+            <div class="slider-caption" style="text-align: right">
+              <h3>Responsive</h3>
+              <p>And it's fully responsive!</p>
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slide-box>
+    </div>
+
+
+
+<ion-item class="row home-btn-list text-center">
+  <div class="col" ui-sref="app.Photoalbum"><i class="ion-images"></i><br><span ng-bind="'Photoalbum'|translate"></span></div>
+  <div class="col" ui-sref="app.GiftBox"><i class="ion-bowtie"></i><br><span ng-bind="'gifts'|translate"></span></div>
+  <div class="col" ui-sref="app.Avatar"><i class="ion-ios-person-outline"></i><br><span ng-bind="'Avatar'|translate"></span></div>
+  <div class="col home-btn-list-last-item" ui-sref="app.uploadPictures"><i class="ion-ios-camera-outline"></i><br><span ng-bind="'uploadPictures'|translate"></span></div>
+</ion-item >
+
+<ion-list class="tabs-striped">
+    <ion-item class="tabs homepage-tabs">
+      <a class=" homepage-tabs-item {{!subContent ?'active':''}}" ng-click="swapTab(false);">
+        <span ng-bind="'AboutMy'|translate"></span>
+      </a>
+      <a class=" homepage-tabs-item {{subContent ?'active':''}}" ng-click="swapTab(true)" >
+        <span ng-bind="'freshNews'|translate"></span>
+      </a>
+    </ion-item>
+</ion-list>
+    <ion-list ng-show="!subContent" >
+      <ion-item class="item-divider">
+        <span ng-bind="'AboutMyself'|translate"></span>
+      </ion-item>
+      <ion-item>
+
+      </ion-item>
+      <ion-item class="item-divider">
+        <span ng-bind="'EssentialInformation'|translate"></span>
+      </ion-item>
+
+      <ion-item ng-click="doPost()">
+
+        {{'Sex'|translate}}
+          <span class="item-note">
+            {{user.Sex}}
+          </span>
+      </ion-item>
+      <ion-item>
+
+        {{'Birthday'|translate}}
+          <span class="item-note">
+            {{user.Birthday}}
+          </span>
+      </ion-item>
+      <ion-item>
+
+        {{'languages'|translate}}
+          <span class="item-note">
+            {{user.languages}}
+          </span>
+      </ion-item>
+      <ion-item>
+
+        {{'heights'|translate}}
+          <span class="item-note">
+            {{user.heights}}
+          </span>
+      </ion-item>
+      <ion-item>
+
+        {{'weights'|translate}}
+          <span class="item-note">
+            {{user.weights}}
+          </span>
+      </ion-item>
+
+      <ion-item  class="item-divider">
+        <span ng-bind="'AffectionIsIntroduced'|translate"></span>
+      </ion-item>
+      <ion-item>
+
+        {{'SexualOrientation'|translate}}
+          <span class="item-note">
+            {{user.SexualOrientation}}
+          </span>
+      </ion-item>
+      <ion-item>
+
+        {{'EmotionalState'|translate}}
+          <span class="item-note">
+            {{user.EmotionalState}}
+          </span>
+      </ion-item>
+
+      <ion-item  class="item-divider">
+        <span ng-bind="'geographicPosition'|translate"></span>
+      </ion-item>
+      <ion-item>
+
+        {{'countries'|translate}}
+          <span class="item-note">
+            {{user.countries}}
+          </span>
+      </ion-item>
+      <ion-item>
+
+        {{'citys'|translate}}
+          <span class="item-note">
+            {{user.citys}}
+          </span>
+      </ion-item>
+      <ion-item  class="item-divider">
+        <span ng-bind="'EducationWork'|translate"></span>
+      </ion-item>
+      <ion-item>
+
+        {{'Education'|translate}}
+          <span class="item-note">
+            {{user.Education}}
+          </span>
+      </ion-item>
+      <ion-item>
+
+        {{'works'|translate}}
+          <span class="item-note">
+            {{user.works}}
+          </span>
+      </ion-item>
+      <ion-item>
+
+        {{'incomes'|translate}}
+          <span class="item-note">
+            {{user.incomes}}
+          </span>
+      </ion-item>
+    </ion-list>
+    <ion-list ng-show="subContent" >
+      <ion-item class="item item-thumbnail-left" href="#">
+        <img src="img/demoPic/blue-album.jpg">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </ion-item>
+
+      <ion-item class="item item-thumbnail-left" href="#">
+        <img src="img/demoPic/blue-album.jpg">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </ion-item>
+
+      <ion-item class="item item-thumbnail-left" href="#">
+        <img src="img/demoPic/blue-album.jpg">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </ion-item>
+
+      <ion-item class="item item-thumbnail-left" href="#">
+        <img src="img/demoPic/blue-album.jpg">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </ion-item>
+
+      <ion-item class="item item-thumbnail-left" href="#">
+        <img src="img/demoPic/blue-album.jpg">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </ion-item>
+
+      <ion-item class="item item-thumbnail-left" href="#">
+        <img src="img/demoPic/blue-album.jpg">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </ion-item>
+      <ion-item  class="for-more-btn text-center">
+        <span ng-bind="'Moreandmore'|translate"></span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

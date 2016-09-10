@@ -1,0 +1,68 @@
+
+<ion-view view-title="{{'Landed'|translate}}">
+  <ion-content id="home_login">
+    <ion-list>
+      <ion-item class="item item-divider">
+
+    </ion-item>
+    </ion-list>
+    <ion-list class="list text-left">
+      <ion-item class="item item-input">
+        <span class="input-label">{{'Username'|translate}}</span>
+        <input type="text" placeholder="{{'EnterUsername'|translate}}">
+      </ion-item>
+      <ion-item class="item item-input">
+        <span class="input-label">{{'Password'|translate}}</span>
+        <input type="password" placeholder="{{'EnterPassword'|translate}}">
+      </ion-item>
+
+    </ion-list>
+    <ion-list class="list"><ion-item class="item item-divider">
+
+    </ion-item>
+      <ion-item class="item item-toggle text-left">
+        <label for="getPwd" style="font-size: 16px;"> {{'Password'|translate}}</label>
+        <label class="toggle toggle-positive">
+          <input type="checkbox" id="getPwd" checked="">
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+        </label>
+      </ion-item>
+    </ion-list>
+
+    <div class="padding">
+      <button class="button button-block button-balanced" ng-click="doLogin()">{{'Landed'|translate}}</button>
+    </div>
+    <div></div>
+    <ion-list class="text-right "><ion-item class="item item-divider"><a ng-click="state.go('login.tab.forget')">{{'ForgotPassword'|translate}}?</a></ion-item></ion-list>
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="state.go('login.tab.reg')">{{'Register'|translate}}</button>
+    </div>
+
+
+    <!--
+    <div class="Quick-style">
+      <div id="Quick_login">{{'Quick_login'|translate}}</div>
+      <div class="Quick-div">
+        <div class="Quick-div-style" ng-click="QQLogin()">
+          <img src='image/qq.png' class='class-img'>
+        </div>
+        <div class="Quick-div-style" >
+          <a href="http://www.charmmeet.com/weixin.php"><img src='image/weixin.png' class='class-img'></a>
+        </div>
+        <div class="Quick-div-style" style="display: none;">
+          <img src='image/twitter.png' class='class-img'>
+        </div>
+        <div class="Quick-div-style" ng-click="vkLogin()">
+          <img src='image/vk.png' class='class-img'>
+        </div>
+        <div class="Quick-div-style" ng-click="fbLogin()">
+          <img src='image/fb.png' class='class-img'>
+        </div>
+      </div>
+    </div>-->
+  </ion-content>
+</ion-view>
+
+

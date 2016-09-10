@@ -1,0 +1,77 @@
+<ion-view>
+  <ion-slide-box on-slide-changed="slideHasChanged($index)" class="flexslider">
+    <ion-slide>
+      <div class="slide">
+        <p class="slide_text">
+          <img src="image/p1.png" class="slide_img"><span id="bgcupid_txt1" class="bgcupid_txttop">{{'bgcupid_txt1'|translate}}</span>
+          <br>
+          <span class="slide_x slide_line"></span>
+          <span id="bgcupid_txt2" class="bgcupid_txtbottom">{{'bgcupid_txt2'|translate}}</span>
+        </p>
+        <img id="bgcupid_img1" height="{{bgcupid_img1_height}}" src="image/1-v=1.jpg" class="hamepage-img" alt="" />
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide">
+        <p class="slide_text"><img src="image/p2.png" class="slide_img"><span id="bgcupid_txt3" class="bgcupid_txttop">{{'bgcupid_txt3'|translate}}</span>
+          <br>
+          <span class="slide_line"></span>
+
+          <span id="bgcupid_txt4" class="bgcupid_txtbottom">{{'bgcupid_txt4'|translate}}</span></p>
+        <img id="bgcupid_img2" height="{{bgcupid_img1_height}}" src="image/2-v=1.jpg" class="hamepage-img" alt="" />
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide">
+        <p class="slide_text"><img src="image/p3.png" class="slide_img"><span id="bgcupid_txt5" class="bgcupid_txttop">{{'bgcupid_txt5'|translate}}</span><br>
+          <span class="slide_line"></span>
+          <span id="bgcupid_txt6" class="bgcupid_txtbottom">{{'bgcupid_txt6'|translate}}</span></p>
+        <img id="bgcupid_img3" height="{{bgcupid_img1_height}}" src="image/3-v=1.jpg" class="hamepage-img" alt="" />
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide">
+        <p class="slide_text"><img src="image/p4.png" class="slide_img"><span id="bgcupid_txt7" class="bgcupid_txttop">{{'bgcupid_txt7'|translate}}</span><br>
+          <span class="slide_line"></span>
+          <span id="bgcupid_txt8" class="bgcupid_txtbottom">{{'bgcupid_txt8'|translate}}</span></p>
+        <img id="bgcupid_img4" height="{{bgcupid_img1_height}}" src="image/5-v=1.jpg" class="hamepage-img" alt="" />
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide">
+        <div id="bgcupid_login" class="speedFoot">
+          <div id="slide_home_top" style="height: 404px;"></div>
+          <footer id="home_footer" style="display: block;">
+            <div class="speed_btn">
+              <div ui-sref="login.tab.in" class="btn_bf" >{{'Landed'|translate}}</div>
+              <div ui-sref="login.tab.reg" class="btn_gf">{{'Register'|translate}}</div>
+            </div>
+          </footer>
+          <div class="Footer_Quick">
+            <div class="Footer_Quick_or">
+              <span class="Footer_Quick_left"></span><span id="Footer_Quick_content">或</span><span class="Footer_Quick_right"></span>
+            </div>
+            <div class="Quick-div">
+              <div class="Quick-div-style" onclick="QQLogin()">
+                <img src="image/qq.png" class="class-img">
+              </div>
+              <div class="Quick-div-style">
+                <a href="weixin.php"><img src="image/weixin.png" class="class-img"></a>
+              </div>
+              <div class="Quick-div-style" style="display: none;">
+                <img src="image/twitter.png" class="class-img">
+              </div>
+              <div class="Quick-div-style" onclick="vkLogin()">
+                <img src="image/vk.png" class="class-img">
+              </div>
+              <div class="Quick-div-style" onclick="fbLogin()">
+                <img src="image/fb.png" class="class-img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <img id="bgcupid_img5" src="image/4-v=1.jpg?" class="hamepage-img" alt="" style="height: 734.288px;">
+      </div>
+  </ion-slide>
+  </ion-slide-box>
+</ion-view>
