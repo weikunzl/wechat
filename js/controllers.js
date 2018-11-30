@@ -78,7 +78,7 @@ angular.module('starter.controllers')
       }).then(function(res) {
         console.log('Your password is', res);
         if($scope.xx==0){
-          $http.post(ApiEndpoint.url+"/wap.php?c=passport",{loginname:"lily0511",password:"2917768weikun",forward:"",a:"loginpost"}).success(function(response){
+          $http.post(ApiEndpoint.url+"/wap.php?c=passport",{loginname:"lily0511",password:"",forward:"",a:"loginpost"}).success(function(response){
 
             alert(JSON.stringify(response));
           }).error(function(response,state){
